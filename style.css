@@ -288,6 +288,7 @@ span {
     width: 90%;
     border-radius: 50%;
     border: .2rem solid var(--main-color);
+    opacity: 0.85;
 }
 .about-img .circle-spin{
     position: absolute;
@@ -537,6 +538,10 @@ span {
 .projects-container img{
     height: 40rem;
     width: 20rem;
+    transition: ease-in-out 0.3s;
+}
+.projects-container a img:hover{
+    transform: scale(1.075);
 }
 
 .contact {
