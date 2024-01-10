@@ -90,8 +90,7 @@ function sendMail() {
     || document.getElementById("message").value == "") {
         alert("Ensure you input a value in all the fields above!");
     }
-    else { emailjs
-        .send(serviceID, templateID, params)
+    else { emailjs.send(serviceID, templateID, params)
         .then((res) => {
             document.getElementById("name").value = "";
             document.getElementById("email").value = "";

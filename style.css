@@ -696,9 +696,21 @@ span {
 }
 
 /* BREAKPOINTS */
+@media (max-width: 1920px) {
+    html {
+        font-size: 80%;
+    }
+    .heading {
+        font-size: 4rem;
+    }
+}
+
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
+    }
+    .heading {
+        font-size: 3.25rem;
     }
 }
 
