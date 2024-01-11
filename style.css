@@ -633,7 +633,7 @@ span {
 }
 
 #year{
-    color: white;
+    color: var(--text-color);
 }
 
 .footer-iconTop a {
