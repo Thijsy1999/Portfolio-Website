@@ -249,10 +249,12 @@ section {
     width: 100%;
 }
 
-/* .home .home-img {
-    position: relative;
-    object-fit: cover;
-}  */
+.home .avatarimage{
+    position: absolute;
+    bottom: 200px;
+    left: 1400px;
+    scale: 1.5;
+}
 
 .about{
     display: flex;
@@ -396,7 +398,7 @@ span {
 }
 
 .education-content .content .year{
-    font-size: 1.5rem; /* 1.5rem original */
+    font-size: 1.2rem; /* 1.5rem original */
     color: var(--main-color);
     padding-bottom: .5rem;
 }
@@ -406,11 +408,11 @@ span {
 }
 
 .education-content .content h3{
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .education-content .content p{
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     padding-top: .5rem;
 }
 
@@ -466,7 +468,7 @@ span {
 }
 
 .skills-content .progress h3 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
     font-weight: 500;
@@ -477,7 +479,7 @@ span {
 }
 
 .skills-content .progress .bar {
-    height: 2.5rem;
+    height: 2.25rem;
     border-radius: .6rem;
     border: .2rem solid var(--main-color);
     padding: .5rem;
@@ -550,7 +552,7 @@ span {
 }
 
 .contact form{
-    max-width: 70rem;
+    max-width: 60rem;
     margin: 0 auto;
     text-align: center;
 }
@@ -572,7 +574,7 @@ span {
     width: 100%;
     height: 100%;
     padding: 1.5rem;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: var(--text-color);
     background: transparent;
     border-radius: .6rem;
@@ -629,7 +631,7 @@ span {
 }
 
 .footer-text p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 #year{
@@ -698,10 +700,19 @@ span {
 /* BREAKPOINTS */
 @media (max-width: 1920px) {
     html {
-        font-size: 80%;
+        font-size: 90%;
     }
     .heading {
         font-size: 4rem;
+    }
+    .home-content h1{
+        font-size: 400%;
+    }
+    .home .avatarimage{
+        position: absolute;
+        bottom: 80px;
+        scale: 1.2;
+        left: 900px;
     }
 }
 
@@ -711,6 +722,17 @@ span {
     }
     .heading {
         font-size: 3.25rem;
+    }
+    .avatar{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .home .avatarimage{
+        position: absolute;
+        bottom: 100px;
+        left: 400px;
+        scale: 0.85;
     }
 }
 
@@ -730,6 +752,12 @@ span {
     .footer {
         padding: 2rem 4%;
     }
+    .home .avatarimage{
+        position: absolute;
+        bottom: 100px;
+        left: 300px;
+        scale: 0.75;
+    }
 }
 
 @media (max-width: 768px) {
@@ -742,7 +770,7 @@ span {
     }
 
     .navbar {
-        position: absolute;
+        /* position: absolute; */
         top: 100%;
         left: -100%;
         width: 100%;
@@ -807,6 +835,9 @@ span {
     .projects-container a img{
         height: 45rem;
         width: 25rem;
+    }
+    .home .avatarimage{
+        display: none;
     }
 }
 
